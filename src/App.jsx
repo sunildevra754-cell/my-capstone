@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import TaskManager from './components/TaskManager'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +29,12 @@ function App() {
         >
           Count is {count}
         </button>
+      </section>
+
+      <div className="ticks"></div>
+
+      <section id="tasks">
+        <TaskManager />
       </section>
 
       <div className="ticks"></div>
